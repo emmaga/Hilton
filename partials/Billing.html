@@ -1,0 +1,28 @@
+<div ng-controller="billController" class="movie-content">
+    <div class="movie-item-container">
+        <div id="service-detail-container">
+            <div class="movie-head">
+                <img class="movie-icon" src="{{iconUrl}}">
+                <p class="movie-text">{{serviceName}}</p>
+            </div>
+            <div class="flight-container" style="width: 1028px;height: 462px;background:rgba(29,32,33,0.80);margin:0 auto;">
+                <table>
+                    <tr style="height: 80px;line-height: 80px;">
+                        <th>{{head1}}</th><th>{{head2}}</th><th>{{head3}}</th><th>{{head4}}</th>
+                    </tr>
+                    <tr ng-repeat="bill in bills" ng-show="judge($index);">
+                        <td>{{$index+1}}</td><td>{{bill.name}}</td><td>{{bill.price}}</td><td>{{bill.time}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bill-bot">
+                <span class="bot-left">
+                    <img style="vertical-align: middle;position:relative;top: -2px;" src="assets/images/left.png">
+                    {{page}}/{{pages}}
+                    <img src="assets/images/right.png" style="vertical-align: middle;position:relative;top: -2px;">
+                </span>
+                <span class="bot-right">{{priceText}}{{cost}}{{total}}</span>
+            </div>
+        </div>
+    </div>
+</div>

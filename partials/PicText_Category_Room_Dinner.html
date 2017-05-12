@@ -1,0 +1,62 @@
+<div ng-controller="FoodController" class="movie-content">
+    <!--<div class="logo"><img src="assets/images/logo.png" width="100px" height="83.3px"></div>-->
+    <div class="movie-item-container">
+        <div id="service-detail-container">
+            <div class="movie-head">
+                <img class="movie-icon" src="{{iconUrl}}">
+                <p class="movie-text">{{serviceName}}</p>
+            </div>
+            <div class="content-container">
+                <div class="meal-list-container">
+                    <div class="meal-title1"><img src="assets/images/top.png"></div>
+                    <div class="list-container-detail" ng-style="{top: listRightStyle + 'px'}">
+                        <div ng-repeat="item in class" class="meal-title" ng-class="{'meal-selected': selectIndex==$index}">{{item.name}}</div>
+                    </div>
+                    <div class="meal-title2"><img src="assets/images/bot.png"></div>
+                </div>
+                <div class="meal-detail-container">
+                    <div ng-style="{top:listStyle+'px'}" style="position: relative;">
+                        <div class="food-item" ng-repeat="food in foods" ng-class="{'food-index':select==$index}">
+                            <img src="{{food.img}}" class="food-detail-img">
+                            <div class="food-content-right">
+                                <span class="food-detail-title">{{food.name}}</span>
+                                <span class="food-detail-price">{{money}}{{food.price}}</span>
+                                <!--<span class="food-btn food-btn-sub">-</span>-->
+                                <!--<span class="food-btn food-btn-number">{{pieces}}</span>-->
+                                <!--<span class="food-btn food-btn-add">+</span>-->
+                                <!--<div class="food-btn food-btn-submit">{{addText}}</div>-->
+                                <!--<div class="btn_border" ng-hide="LEVEL==1" id="food_border" style="height: 64px;width: 55px;right: 3px;top:261px;"></div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/left.png" class="left">
+            <img src="assets/images/right.png" class="right">
+            <!--confirm框-->
+            <div id="confirmModal" class="reveal-modal-plus confirm" style="display: none;">
+                <div class="toast-content1">
+                    {{confirmText}}
+                </div>
+                <div class="wel-bot1">
+                    <span style="position: absolute;bottom: 0;left: 45px;" ng-class="{'active': do}">{{sure}}</span>
+                    <span style="position: absolute;bottom: 0;left: 260px" ng-class="{'active': !do}">{{cancel}}</span>
+                </div>
+                <a class="close-reveal-modal"></a>
+            </div>
+            <div class="toolbar">
+            <span class="toolbar-select">
+                {{select.left}}<i class="tip_img toolbar-img"><img ng-src="{{select.icon}}" height="34.7px"> </i>{{select.right}}
+            </span>
+                <span>|</span>
+            <span class="toolbar-ok">
+                {{ok.left}}<i class="tip_img toolbar-img"><img src="{{ok.icon}}" height="34.7px"> </i>{{ok.right}}
+            </span>
+                <!--<span>|</span>-->
+            <!--<span class="toolbar-back">-->
+                <!--{{menu.left}}<i class="tip_img toolbar-img"><img src="{{menu.icon}}" height="34.7px"> </i>{{menu.right}}-->
+            <!--</span>-->
+            </div>
+        </div>
+    </div>
+</div>

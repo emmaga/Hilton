@@ -1,0 +1,53 @@
+<div ng-controller="WorldClockController" class="movie-content">
+    <div class="movie-item-container">
+        <div id="service-detail-container">
+            <div class="movie-head">
+                <img class="movie-icon" src="{{iconUrl}}">
+                <p class="movie-text">{{serviceName}}</p>
+            </div>
+            <div class="clock-content">
+                <div class="clock-left">
+                    <p class="clock-time">{{clock}}</p>
+                    <p class="clock-date">{{date}}</p>
+                    <div class="clock-hr"></div>
+                    <ul class="clock-city-list">
+                        <li class="clock-city-item" ng-repeat="city in cities">{{city}}</li>
+                    </ul>
+                </div>
+                <div class="clock-right">
+                    <img src="assets/images/worldclock.png" class="clock-img">
+                    <div class="clock-bottom">
+                        <span style="display: inline-block;height: 40px;line-height: 40px;float: left;"><img src="assets/images/left.png"></span>
+                        <span style="display: inline-block;height: 40px;line-height: 40px;">UTC{{symbol}}{{num}}</span>
+                        <span style="display: inline-block;height: 40px;line-height: 40px;float: right;"><img src="assets/images/right.png"></span>
+                    </div>
+
+                    <div class="timezone timezone1" ng-show="num == -1"></div>
+                    <div class="timezone timezone2" ng-show="num == 0"></div>
+                    <div class="timezone timezone3" ng-show="num == 1"></div>
+                    <div class="timezone timezone4" ng-show="num == 2"></div>
+                    <div class="timezone timezone5" ng-show="num == 3"></div>
+                    <div class="timezone timezone6" ng-show="num == 4"></div>
+                    <div class="timezone timezone7" ng-show="num == 5"></div>
+                    <div class="timezone timezone8" ng-show="num == 6"></div>
+                    <div class="timezone timezone9" ng-show="num == 7"></div>
+                    <div class="timezone timezone10" ng-show="num == 8"></div>
+                    <div class="timezone timezone11" ng-show="num == 9"></div>
+                    <div class="timezone timezone12" ng-show="num == 10"></div>
+                    <div class="timezone timezone13" ng-show="num == 11"></div>
+                    <div class="timezone timezone14" ng-show="num == 12"></div>
+                    <div class="timezone timezone15" ng-show="num == -11"></div>
+                    <div class="timezone timezone16" ng-show="num == -10"></div>
+                    <div class="timezone timezone17" ng-show="num == -9"></div>
+                    <div class="timezone timezone18" ng-show="num == -8"></div>
+                    <div class="timezone timezone19" ng-show="num == -7"></div>
+                    <div class="timezone timezone20" ng-show="num == -6"></div>
+                    <div class="timezone timezone21" ng-show="num == -5"></div>
+                    <div class="timezone timezone22" ng-show="num == -4"></div>
+                    <div class="timezone timezone23" ng-show="num == -3"></div>
+                    <div class="timezone timezone24" ng-show="num == -2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

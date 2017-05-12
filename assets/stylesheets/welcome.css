@@ -1,0 +1,116 @@
+.welcome-content {
+    width: 1280px;
+    height: 720px;
+    background-size: 1280px;
+    position: absolute;
+}
+
+.wel-bot {
+    padding: 0 60px;
+}
+
+.welcome-text-container {
+    width: 936px;
+    padding: 0 172px;
+    margin-top: 211.3px;
+    float: left;
+}
+
+.logo {
+    position: absolute;
+    left: 32px;
+    top: 18px;
+}
+
+.welcome-title {
+    margin-top: 70px;
+    font-size:32px;
+    color:white;
+    text-align:left;
+    line-height: 45px;
+}
+
+.guest-name {
+    font-size: 38px;
+    color:#fff4c1;
+}
+
+.welcome-text {
+    width: 624px;
+    font-size: 32px;
+    margin-top: 15px;
+    line-height: 42.7px;
+    color: white;
+    text-indent: 2em;
+    text-align: left;
+}
+
+.wel-bot > span {
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    width:210px;
+    height: 54px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-top: 6px;
+    line-height: 54px;
+}
+
+.wel-bot > span.active {
+    background-color: #575C82;
+}
+
+.press {
+}
+
+.tip_img {
+    margin: 0 5px;
+    position: relative;
+    top: 8px;
+    height: 34.7px;
+    width: 34.7px;
+    display: inline-block;
+    vertical-align: baseline
+}
+
+
+/*希尔顿*/
+.wel-top{
+    opacity:0.9;
+    background:#1d2021;
+    width:1000px;
+    height:390px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 0 0;
+    z-index: 9;
+}
+.wel-logo{
+    width: 325px;
+    height:100%;
+    float: left;
+    text-align: center;
+    padding-top: 128px;
+}
+.wel-content{
+    width: 675px;
+    height:100%;
+    float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wel-bot{
+    width: 880px;
+    height: 66px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 10px 10px;
+    opacity:0.9;
+    background:#1d2021;
+    line-height: 66px;
+    z-index:9;
+}

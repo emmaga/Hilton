@@ -1,0 +1,18 @@
+<div ng-controller="CheckOutController" class="movie-content">
+    <div class="movie-item-container">
+        <div id="service-detail-container">
+            <div class="movie-head">
+                <img class="movie-icon" src="{{iconUrl}}">
+                <p class="movie-text">{{serviceName}}</p>
+            </div>
+            <img src="assets/images/checkout.png" class="left-img">
+            <div class="checkout-content">
+                <p class="checkout-title">{{title}}</p>
+                <p class="checkout-subtitle">{{subtitle1}}</p>
+                <p class="checkout-subtitle" style="margin-bottom: 55px;">{{subtitle2}}</p>
+                <div class="checkout-btn" ng-class="{'btn-selected':!sure}">{{cancel}}</div>
+                <div class="checkout-btn" ng-class="{'btn-selected':sure}">{{makesure}}</div>
+            </div>
+        </div>
+    </div>
+</div>

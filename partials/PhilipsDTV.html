@@ -1,0 +1,84 @@
+<div ng-controller="FlightController" class="movie-content">
+    <div class="movie-item-container">
+        <div id="service-detail-container">
+            <div class="movie-head">
+                <img class="movie-icon" src="{{iconUrl}}">
+                <p class="movie-text">{{serviceName}}</p>
+            </div>
+            <div class="food-list-container">
+                <div class="list-container">
+                    <span class="food-title" ng-class="{'flight-selected': selectIndex== 0}"><img src="assets/images/leave.png" class="ver-img">{{name1}}</span>
+                    <span class="food-title" ng-class="{'flight-selected': selectIndex== 1}"><img src="assets/images/arrive.png" class="ver-img">{{name2}}</span>
+                    <span class="food-title" ng-class="{'flight-selected': selectIndex== 2}"><img src="assets/images/leave.png" class="ver-img">{{name3}}</span>
+                    <span class="food-title" ng-class="{'flight-selected': selectIndex== 3}"><img src="assets/images/arrive.png" class="ver-img">{{name4}}</span>
+                </div>
+            </div>
+            <div class="flight-container" ng-show="selectIndex == 0">
+                <table>
+                    <tr>
+                        <th>{{head1}}</th><th>{{head2}}</th><th>{{head3}}</th><th>{{head4}}</th><th>{{head5}}</th><th>{{head6}}</th>
+                    </tr>
+                    <tr><td>MU2701</td><td>{{city1}}</td><td>T2</td><td>09:30</td><td>09:30</td><td style="color: green;">{{status1}}</td></tr>
+                    <tr><td>SC4601</td><td>{{city2}}</td><td>T2</td><td>09:45</td><td>09:45</td><td style="color: green;">{{status1}}</td></tr>
+                    <tr><td>SC4661</td><td>{{city3}}</td><td>T2</td><td>10:15</td><td>11:07</td><td style="color: red;">{{status3}}</td></tr>
+                    <tr><td>MU5195</td><td>{{city4}}</td><td>T1</td><td>12:20</td><td>12:20</td><td>{{status2}}</td></tr>
+                    <tr><td>SC4695</td><td>{{city5}}</td><td>T2</td><td>14:10</td><td>14:10</td><td>{{status2}}</td></tr>
+                    <tr><td>SC4607</td><td>{{city6}}</td><td>T1</td><td>15:30</td><td>15:30</td><td>{{status2}}</td></tr>
+                </table>
+            </div>
+            <div class="flight-container" ng-show="selectIndex == 1">
+                <table>
+                    <tr>
+                        <th>{{head1}}</th><th>{{head22}}</th><th>{{head3}}</th><th>{{head4}}</th><th>{{head5}}</th><th>{{head6}}</th>
+                    </tr>
+                    <tr><td>MU2701</td><td>{{city1}}</td><td>T2</td><td>09:30</td><td>09:30</td><td style="color: green;">{{status1}}</td></tr>
+                    <!--<tr><td>SC4601</td><td>{{city2}}</td><td>T2</td><td>09:45</td><td>09:45</td><td style="color: green;">{{status1}}</td></tr>-->
+                    <!--<tr><td>SC4661</td><td>{{city3}}</td><td>T2</td><td>10:15</td><td>11:07</td><td style="color: red;">{{status3}}</td></tr>-->
+                    <!--<tr><td>MU5195</td><td>{{city4}}</td><td>T1</td><td>12:20</td><td>12:20</td><td>{{status2}}</td></tr>-->
+                    <!--<tr><td>SC4695</td><td>{{city5}}</td><td>T2</td><td>14:10</td><td>14:10</td><td>{{status2}}</td></tr>-->
+                    <!--<tr><td>SC4607</td><td>{{city6}}</td><td>T1</td><td>15:30</td><td>15:30</td><td>{{status2}}</td></tr>-->
+                </table>
+            </div>
+            <div class="flight-container" ng-show="selectIndex == 2">
+                <table>
+                    <tr>
+                        <th>{{head1}}</th><th>{{head2}}</th><th>{{head3}}</th><th>{{head4}}</th><th>{{head5}}</th><th>{{head6}}</th>
+                    </tr>
+                    <tr><td>MU2701</td><td>{{city1}}</td><td>T2</td><td>09:30</td><td>09:30</td><td style="color: green;">{{status1}}</td></tr>
+                    <tr><td>SC4601</td><td>{{city2}}</td><td>T2</td><td>09:45</td><td>09:45</td><td style="color: green;">{{status1}}</td></tr>
+                    <tr><td>SC4661</td><td>{{city3}}</td><td>T2</td><td>10:15</td><td>11:07</td><td style="color: red;">{{status3}}</td></tr>
+                    <!--<tr><td>MU5195</td><td>{{city4}}</td><td>T1</td><td>12:20</td><td>12:20</td><td>{{status2}}</td></tr>-->
+                    <!--<tr><td>SC4695</td><td>{{city5}}</td><td>T2</td><td>14:10</td><td>14:10</td><td>{{status2}}</td></tr>-->
+                    <!--<tr><td>SC4607</td><td>{{city6}}</td><td>T1</td><td>15:30</td><td>15:30</td><td>{{status2}}</td></tr>-->
+                </table>
+            </div>
+            <div class="flight-container" ng-show="selectIndex == 3">
+                <table>
+                    <tr>
+                        <th>{{head1}}</th><th>{{head22}}</th><th>{{head3}}</th><th>{{head4}}</th><th>{{head5}}</th><th>{{head6}}</th>
+                    </tr>
+                    <tr><td>MU2701</td><td>{{city1}}</td><td>T2</td><td>09:30</td><td>09:30</td><td style="color: green;">{{status1}}</td></tr>
+                    <tr><td>SC4601</td><td>{{city2}}</td><td>T2</td><td>09:45</td><td>09:45</td><td style="color: green;">{{status1}}</td></tr>
+                    <tr><td>SC4661</td><td>{{city3}}</td><td>T2</td><td>10:15</td><td>11:07</td><td style="color: red;">{{status3}}</td></tr>
+                    <tr><td>MU5195</td><td>{{city4}}</td><td>T1</td><td>12:20</td><td>12:20</td><td>{{status2}}</td></tr>
+                    <tr><td>SC4695</td><td>{{city5}}</td><td>T2</td><td>14:10</td><td>14:10</td><td>{{status2}}</td></tr>
+                    <tr><td>SC4607</td><td>{{city6}}</td><td>T1</td><td>15:30</td><td>15:30</td><td>{{status2}}</td></tr>
+                </table>
+            </div>
+
+            <div class="toolbar">
+        <span class="toolbar-select">
+            {{select.left}}<i class="tip_img toolbar-img"><img ng-src="{{select.icon}}" height="34.7px"> </i>{{select.right}}
+        </span>
+                <span>|</span>
+                <span class="toolbar-ok">
+            {{ok.left}}<i class="tip_img toolbar-img"><img src="{{ok.icon}}" height="34.7px"> </i>{{ok.right}}
+        </span>
+                <!--<span>|</span>-->
+                <!--<span class="toolbar-back">-->
+                <!--{{menu.left}}<i class="tip_img toolbar-img"><img src="{{menu.icon}}" height="34.7px"> </i>{{menu.right}}-->
+                <!--</span>-->
+            </div>
+        </div>
+    </div>
+</div>
